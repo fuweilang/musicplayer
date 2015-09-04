@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>H5course</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<script src="js/zepto.js" charset="utf-8" type="text/javascript"></script>
+	<script src="js/fx.js" charset="utf-8" type="text/javascript"></script>
+	<script src="js/touch.js" charset="utf-8" type="text/javascript"></script>
+	<script src="js/iscroll.js" charset="utf-8" type="text/javascript"></script>
+</head>
+<body>
+	<div class="wrap clearfix">
+		<div class="loading" id="loadingPage">
+			<div class="loading-icon"></div>
+			<span>5</span>
+			<p>H5音乐</p>
+		</div>
+		<div class="enter" id="enterPage">
+			<div class="enter-tit" id="enterTitle">
+				<div class="entertit-left">
+					<h2>HTML5学堂</h2>
+					<p>www.h5course.com</p>
+				</div>
+				<div class="entertit-right">
+					<p>5</p>
+				</div>
+			</div>
+			<div class="enter-con" id="enterContent">
+				<p>学音乐！</p>
+				<p>用H5学堂播放器！</p>
+			</div>
+			<div class="enter-btn" id="enterBtn">立即体验</div>
+		</div>
+		<div class="list" id="listPage">
+			<div class="list-tit">
+				<div class="playing-icon" id="playingIcon"></div>
+				音乐列表
+			</div>
+			<div class="music-list" id="musicList">
+				<ul>
+					<li>
+						<span></span>
+						<div>浮夸</div>
+						<i>4:45</i>
+					</li>
+					<li>
+						<span></span>
+						<div>虫儿飞</div>
+						<i>1:41</i>
+					</li>
+					<li>
+						<span></span>
+						<div>我的滑板鞋</div>
+						<i>2:50</i>
+					</li>
+					<li>
+						<span></span>
+						<div>倩女幽魂</div>
+						<i>3:35</i>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="playing" id="playingPage">
+			<div class="img-bg" id="imgBg">
+				<span></span>
+				<img src="" alt="" title="">
+			</div>
+			<div class="volume-bar" id="volBar">
+				<div class="volume-pro" id="volPro"></div>
+				<div class="volume-scroll" id="volbtn"></div>
+			</div>
+			<div class="playing-tit" id="playTit">
+				<h2></h2>
+				<h3></h3>
+				<div class="list-icon" id="listIcon"></div>
+			</div>
+			<div class="playing-con" id="playingmain">
+				<div class="play-lyric" id="playLyic">
+					<div class="lyric-bg">
+						<div class="lyric-area">
+							<div class="lyric"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="playing-btn" id="BtnArea">
+				<audio src="" controls="controls">
+				</audio>
+				<div class="playing-bar" id="musicBar">
+					<div class="progress" id="musicProgress"></div>
+					<div class="pro-scroll" id="musicScroll">|||</div>
+				</div>
+				<div class="playing-time" id="playingTime">
+					<span></span>
+					<span></span>
+				</div>
+				<div class="slide-arrowUp" id="arrow"></div>
+				<div class="btn-icon">
+					<div>
+						<span class="mode"></span>
+						<span class="skin"></span>
+					</div>
+					<div>
+						<span class="rewind"></span>
+						<span class="last"></span>
+					</div>
+					<div>
+						<span id="palyOrPauseicon" class="playicon"></span>
+					</div>
+					<div>
+						<span class="fast"></span>
+						<span class="next"></span>
+					</div>
+					<div>
+						<span class="volume" id="volumeBtn"></span>
+						<span class="mute" id="muteBtn"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/musicBox.js" charset="utf-8" type="text/javascript"></script>
+</body>
+</html>

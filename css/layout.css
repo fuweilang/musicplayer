@@ -1,0 +1,567 @@
+@charset 'utf-8';
+.wrap {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto; 
+	background: url("../images/music_bg.jpg");
+	background-size: 100% 100%;
+} 
+/*loading*/
+.loading {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-transform-style: preserve-3d;
+}
+.loading span {
+	position: absolute;
+	top: 20.5%;
+	left: 8.13rem;
+	width: 10.42rem;
+	height: 10.42rem;
+	line-height: 10.42rem;
+	color: #0f80a7;
+	font-size: 5rem;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 50%;
+}
+.loading-icon {
+	position: absolute;
+	top: 20%;
+	left: 8.13rem;
+	width: 10.42rem;
+	height: 10.42rem;
+	border: 0.1rem solid #101010;
+	border-top: 0.3rem solid #101010;
+	background: #fff;
+	opacity: 0.7;
+	border-radius: 50%;
+	
+	-weikit-transform-origin: 50% 5.41rem;
+	transform-origin: 50% 5.41rem;
+
+	-webkit-animation: loading 1s linear infinite; 
+	animation: loading 1s linear infinite;  
+}
+
+@-webkit-keyframes loading {
+	0% {
+		-webkit-transform: rotateZ(0deg);
+	}
+	100% {
+		-webkit-transform: rotateZ(360deg);
+	}
+}
+
+.loading p {
+	position: absolute;
+	top: 60%;
+	width: 100%;
+	height: 3.33rem;
+	background: #1d1527;
+	line-height: 3.33rem;
+	color: #fff;
+	font-size: 2.08rem;
+	text-align: center;
+	opacity: 0.7;
+}
+/*进入页面*/
+.enter {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+.enter-tit {
+	position: absolute;
+	top: 1.75rem;
+	right: 1.13rem;
+	width: 13.83rem;
+	height: 3rem;
+	opacity: 0;
+}
+.entertit-left {
+	float: left;
+	width: 10.5rem;
+	height: 3rem;
+	opacity: 0.7;
+}
+.entertit-left h2 {
+	width: 100%;
+	height: 1.67rem;
+	line-height: 1.67rem;
+	color: #0f80a7;
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-align: center;
+}
+.entertit-left p {
+	width: 100%;
+	height: 1.33rem;
+	line-height: 1.33rem;
+	color: #0f80a7;
+	font-size: 0.67rem;
+	font-weight: bold;
+	text-align: center;
+}
+.entertit-right {
+	float: left;
+	width: 2.75rem;
+	height: 2.75rem;
+	padding: 0.13rem;
+}
+.entertit-right p {
+	width: 2.75rem;
+	height: 2.75rem;
+	background: #fff;
+	line-height: 2.42rem;
+	color: #0f80a7;
+	font-size: 1.83rem;
+	font-weight: bold;
+	font-family: "Cooper Black";
+	text-align: center;
+	opacity: 0.7;
+	border-radius: 50%;
+	box-shadow: 0 0 0.42rem 0 #fff;
+}
+.enter-con {
+	position: absolute;
+	top: 37%;
+	width: 100%;
+	height: 7.5rem;
+}
+.enter-con p{
+	position: absolute;
+	height: 3.75rem;
+	line-height: 3.75rem;
+	font-size: 2.04rem;
+	color: #fff;
+	text-shadow: 0.04rem 0.05rem 0.21rem #000;
+}
+.enter-con p:nth-child(1) {
+	top: 0;
+	left: -8.75rem;
+	width: 8.75rem;
+
+	-webkit-animation: shake-one 2s linear 1s infinite;
+}
+.enter-con p:nth-child(2) {
+	top: 3.75rem;
+	right: -17.5rem;
+	width: 17.5rem;
+
+	-webkit-animation: shake-two 2s linear 1s infinite;
+}
+@-webkit-keyframes shake-one {
+	0% {
+		left: 2.92rem;
+	}
+	25% {
+		left: 3.92rem;
+	}
+	75% {
+		left: 1.92rem;
+	}
+	100% {
+		left: 2.92rem;
+	}
+}
+@-webkit-keyframes shake-two {
+	0% {
+		right: 4.48rem;
+	}
+	25% {
+		right: 5.48rem;
+	}
+	75% {
+		right: 3.48rem;
+	}
+	100% {
+		right: 4.48rem;
+	}
+}
+.enter-btn {
+	position: absolute;
+	left: 7.08rem;
+	bottom: 3.33rem; 
+	width: 12.5rem;
+	height: 4.5rem;
+	background: #000;
+	line-height: 4.5rem; 
+	color: #fff;
+	font-size: 2.08rem;
+	text-align: center;
+	opacity: 0.5;
+	border-radius: 0.42rem;
+	box-shadow: 0 0 0.42rem 0 #fff;
+
+	-webkit-animation: btn-shadein 3s linear;
+}
+@-webkit-keyframes btn-shadein {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0;
+	} 
+	100% {
+		opacity: 0.5
+	}
+}
+
+/*歌曲列表页*/
+.list {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.list-tit {
+	position: relative;
+	width: 100%;
+	height: 14%;
+	padding-top: 1rem;
+	color: #fff;
+	font-size: 2rem;
+	text-align: center;
+}
+.playing-icon {
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	width: 2.08rem;
+	height: 2.08rem;
+	background: url("../images/layout.png") 0.08rem -6.58rem no-repeat; 
+	background-size: 26.67rem;
+}
+.music-list {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	height: 84%;
+}
+.music-list ul {
+	position: absolute;
+	width: 100%;
+}
+.music-list li {
+	width: 100%;
+	height: 3.33rem;
+	line-height: 3.33rem;
+	color: #fff;
+	font-size: 1rem;
+}
+.music-list li span {
+	float: left;
+	width: 2.67rem;
+	height: 100%;
+	background: url("../images/layout.png") 0.83rem -2.42rem no-repeat;  
+	background-size: 26.67rem;
+}
+.music-list li div {
+	float: left;
+	width: 20rem;
+	height: 100%;
+}
+.music-list li i {
+	float: right;
+	width: 3.75rem;
+	height: 100%;
+	text-align: center;
+	font-style: normal;
+}
+.music-list li .sel {
+	background: url("../images/layout.png") 0.58rem 0.5rem no-repeat;
+	background-size: 26.67rem;
+}
+
+/*播放页*/
+.playing {
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+.img-bg {
+	position: absolute;
+	top: 21%;
+	left: 5.88rem;
+	width: 14.83rem;
+	height: 14.83rem;
+	border: 0.05rem solid #fff;
+	border-radius: 50%;
+	box-shadow: 0.04rem 0.21rem 0.42rem 0.21rem #000;
+}
+.img-bg span {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.4;
+	border-radius: 50%;
+}
+.img-bg img {
+	position: absolute;
+	top: 7%;
+	left: 7%;  
+	width: 87%;
+	height: 87%;
+	border-radius: 50%;
+}
+
+.playing-tit {
+	position: relative;
+	width: 100%;
+	height: 14%;
+	padding-top: 1rem;
+}
+.playing-tit h2 {
+	color: #fff;
+	font-size: 2rem;
+	text-align: center;
+}
+.playing-tit h3 {
+	margin-top: 0.45rem;
+	color: #fff;
+	font-size: 1rem;
+	text-align: center;
+}
+.list-icon {
+	position: absolute;
+	right: 0.83rem;
+	top: 1rem;
+	width: 2.5rem;
+	height: 2.5rem;
+	background: url("../images/layout.png") 0.08rem -10.42rem no-repeat;
+	background-size: 26.67rem;
+}
+.playing-con {
+	position: relative;
+	width: 100%;
+	height: 64%;
+}
+.play-lyric {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	width: 100%;
+	height: 100%;
+}
+.lyric-bg {
+	position: absolute;
+	top: 0;
+	left: 1.88rem;
+	width: 22.92rem;
+	height: 100%;
+	background: #000;
+	opacity: 0.5;
+	border-radius: 0.21rem;
+	box-shadow: 0 0 0.42rem #fff;
+}
+.lyric-area {
+	overflow: hidden;
+	position: absolute;
+	top: 2%;
+	width: 22.92rem;
+	height: 94.5%;
+} 
+.lyric {
+	position: absolute;
+	top: 10.42rem;
+	left: 0.83rem;
+	width: 21.25rem;
+	line-height: 2.08rem;
+	color: #fff;
+	font-size: 1.25rem;
+	text-align: center;
+}
+.lyric p {
+	height: 2.08rem;
+}
+.volume-bar {
+	display: none;
+	position: absolute;
+	top: 65%;
+	left: 5.63rem;
+	width: 15.42rem;
+	height: 0.42rem;
+	background: #000;
+	border-radius: 0.21rem;
+	z-index: 15;
+}
+.volume-pro {
+	position: absolute;
+	left: 0;
+	width: 14.04rem;
+	height: 0.42rem;
+	background: #fff;
+	border-radius: 0.21rem;
+	z-index: 15;
+}
+.volume-scroll {
+	position: absolute;
+	top: -0.29rem;
+	left: 13.84rem;
+	width: 1.58rem;
+	height: 1rem;
+	background: #fff;
+	border-radius: 0.5rem;
+	z-index: 15;
+}
+.playing-btn {
+	overflow: hidden;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 5.75rem;
+}
+.playing-btn audio {
+	position: absolute;
+	left: 0;
+	top: 0;
+	visibility: hidden;
+}
+.playing-bar {
+	position: absolute;
+	top: 0.36rem;
+	width: 100%;
+	height: 0.42rem;
+	background: #000;
+	opacity: 0.8;
+}
+.progress {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 0.42rem;
+	background: #fff;
+}
+.pro-scroll {
+	position: absolute;
+	top: -0.38rem;
+	left: 0;
+	width: 2rem;
+	height: 1.17rem;
+	background: #fff;
+	line-height: 1.17rem;
+	border-radius: 0.5rem;
+	color: #110f0f;
+	font-size: 0.8rem;
+	text-align: center;
+}
+.playing-time {
+	position: absolute;
+	top: 1.25rem;
+	left: 0;
+	width: 100%;
+	height: 1.33rem;
+}
+.playing-time span {
+	position: absolute;
+	color: #fff;
+	font-size: 1rem;
+}
+.playing-time span:nth-child(1) {
+	left: 1.25rem;
+}
+.playing-time span:nth-child(2) {
+	right: 1.25rem;
+}
+.slide-arrowDown {
+	position: absolute;
+	top: 1.08rem;
+	left: 12.25rem;
+	width: 1.83rem;
+	height: 1.83rem;
+	background: url("../images/layout.png") 0.38rem -14.83rem no-repeat;
+	background-size: 26.67rem;
+}
+.slide-arrowUp {
+	position: absolute;
+	top: 1.08rem;
+	left: 12.25rem;
+	width: 1.83rem;
+	height: 1.83rem;
+	background: url("../images/layout.png") -3.63rem -14.83rem no-repeat;
+	background-size: 26.67rem;
+}
+.btn-icon {
+	position: absolute;
+	top: 2.58rem;
+	width: 100%;
+	height: 6.2rem;
+}
+.btn-icon div {
+	float: left;
+	width: 20%;
+	height: 5.67rem;
+	padding: 0.2rem 0;
+}
+.btn-icon span {
+	display: block;
+	height: 2.5rem;
+}
+.btn-icon span:nth-child(2) {
+	margin-top: 0.67rem;
+}
+.mode {
+	background: url("../images/layout.png") -5.09rem -23.08rem no-repeat; 
+	background-size: 26.67rem;
+}
+.mode-random {
+	background: url("../images/layout.png") 1.46rem -23.08rem no-repeat; 
+	background-size: 26.67rem;
+}
+.skin {
+	background: url("../images/layout.png") 1.67rem -38.83rem no-repeat; 
+	background-size: 26.67rem;
+}
+.rewind {
+	background: url("../images/layout.png") 1.83rem -27.08rem no-repeat; 
+	background-size: 26.67rem;
+}
+.last {
+	background: url("../images/layout.png") 1.92rem -43.08rem no-repeat; 
+	background-size: 26.67rem;
+}
+.btn-icon .playicon {
+	position: absolute;
+	top: 0.17rem;
+	width: 5.3rem;
+	height: 2.92rem;
+	background: url("../images/layout.png") 1.28rem -18.78rem no-repeat; 
+	background-size: 26.67rem;
+}
+.btn-icon .pauseicon {
+	position: absolute;
+	top: 0.17rem;
+	width: 5.3rem;
+	height: 2.92rem;
+	background: url("../images/layout.png") 1.35rem -59.18rem no-repeat;
+	background-size: 26.67rem;
+}
+.fast {
+	background: url("../images/layout.png") 1.88rem -30.29rem no-repeat; 
+	background-size: 26.67rem;
+}
+.next {
+	background: url("../images/layout.png") 1.88rem -46.88rem no-repeat; 
+	background-size: 26.67rem;
+}
+.volume {
+	background: url("../images/layout.png") 1.75rem -33.63rem no-repeat; 
+	background-size: 26.67rem;
+}
+.mute {
+	background: url("../images/layout.png") 1.79rem -50.75rem no-repeat; 
+	background-size: 26.67rem;
+}
+.notmute {
+	background: url("../images/layout.png") 1.89rem -54.3rem no-repeat; 
+	background-size: 26.67rem;
+}
