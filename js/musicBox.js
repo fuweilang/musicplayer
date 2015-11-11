@@ -200,9 +200,11 @@ musicBox.prototype.getLyricByAJAX = function(index) {
 				_this.lyricArr.shift();
 			};
 			_this.getLyric[0].innerHTML = "";
+			var html = ""
 			for(var i = 0; i < _this.lyricArr.length; i++) {
-				_this.getLyric[0].innerHTML += "<p>" + _this.lyricArr[i] + "</p>";
+				html += "<p>" + _this.lyricArr[i] + "</p>";
 			}
+			_this.getLyric[0].innerHTML = html;
 		}
 	})
 }
